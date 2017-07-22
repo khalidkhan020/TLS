@@ -16,33 +16,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
-            android:src="@drawable/abt_btn"
+            android:src="@drawable/instruction_btn"
             android:textColor="@color/Color" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="30dp"
             android:layout_marginLeft="70dp"
             android:layout_marginRight="50dp"
             android:layout_marginTop="20dp"
-            android:text="@string/about"
+            android:text="@string/instruction"
             android:textColor="@color/Color" />
 
         <Button
-            android:id="@+id/back_a"
+            android:id="@+id/back_i"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:layout_gravity="center_horizontal"
             android:background="@drawable/back_btn_1" />
-
-        <FrameLayout
-            android:id="@+id/lladd"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:background="@null" />
     </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/lladd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
 </LinearLayout>

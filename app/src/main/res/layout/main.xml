@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#fddfe2"
     android:orientation="vertical">
 
@@ -12,6 +12,7 @@
         android:background="@drawable/text_bg">
 
         <LinearLayout
+            android:id="@+id/layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@+id/lladd"
@@ -19,56 +20,11 @@
             android:orientation="horizontal"
             android:weightSum="3.0">
 
-            <LinearLayout
-                android:id="@+id/layout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="30dp"
-                android:layout_marginTop="20dp"
-                android:layout_weight="1.6"
-                android:orientation="vertical">
-
-                <com.appzone.tls.FontableTextView
-                    android:id="@+id/textView_m"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-
-                    app:font="my_font.ttf"
-                    android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
-                    android:padding="0dp"
-                    android:text="@string/me"
-                    android:textColor="@color/Color"
-                    android:textSize="34sp"
-                    android:textStyle="bold" />
-
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
-                    android:layout_weight="1.0"
-                    android:src="@drawable/heart" />
-
-                <com.appzone.tls.FontableTextView
-                    android:id="@+id/textView_f"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-
-                    app:font="my_font.ttf"
-                    android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
-                    android:padding="0dp"
-                    android:text="@string/love"
-                    android:textColor="@color/Color"
-                    android:textSize="34sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
             <FrameLayout
-                android:layout_width="match_parent"
+                android:layout_width="@dimen/_0dp"
                 android:layout_height="match_parent"
-                android:layout_marginRight="55dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="1.6">
+                android:layout_marginLeft="80dp"
+                android:layout_weight="1.4">
 
                 <ImageView
                     android:id="@+id/imageViewbg"
@@ -92,7 +48,7 @@
                     android:id="@+id/fix"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:layout_gravity="center"
                     android:src="@drawable/marker"
                     android:visibility="gone" />
 
@@ -100,12 +56,55 @@
                     android:id="@+id/count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
-                    android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:layout_gravity="center"
                     android:textColor="#ffffff"
                     android:textSize="15dp"
                     android:textStyle="bold|italic" />
             </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.6"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingBottom="30dp"
+                android:paddingTop="20dp">
+
+                <com.appzone.tls.FontableTextView
+                    android:id="@+id/textView_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="@string/me"
+                    android:textColor="@color/Color"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:font="my_font.ttf" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/heart" />
+
+                <com.appzone.tls.FontableTextView
+                    android:id="@+id/textView_f"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="@string/love"
+                    android:textColor="@color/Color"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:font="my_font.ttf" />
+            </LinearLayout>
+
         </LinearLayout>
 
         <FrameLayout
