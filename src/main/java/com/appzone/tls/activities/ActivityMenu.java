@@ -15,6 +15,7 @@ public class ActivityMenu extends Activity implements OnClickListener {
 
     public void onCreate(Bundle bundle) {
 
+
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(bundle);
