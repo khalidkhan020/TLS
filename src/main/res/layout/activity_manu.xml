@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lladd"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:weightSum="3.0">
+
+        <LinearLayout
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_weight=".8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_0dp"
+                android:layout_weight="1.0"
+                android:text="" />
+
+            <Button
+                android:id="@+id/start_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_0dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/ic_launcher" />
+
+            <Button
+                android:id="@+id/abt_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_0dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/ic_launcher" />
+
+            <Button
+                android:id="@+id/instruction_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_0dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/ic_launcher" />
+
+            <Button
+                android:id="@+id/history_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_0dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/ic_launcher" />
+
+            <Button
+                android:id="@+id/exit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_0dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_0dp"
+                android:layout_weight="2.0"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/lladd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
