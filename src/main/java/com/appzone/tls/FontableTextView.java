@@ -1,11 +1,13 @@
 package com.appzone.tls;
 
 import android.content.Context;
+import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
 
 import com.appzone.truelovescore.R;
 
-public class FontableTextView extends android.support.v7.widget.AppCompatTextView {
+
+public class FontableTextView extends AppCompatTextView {
     public FontableTextView(Context paramContext) {
         super(paramContext);
     }

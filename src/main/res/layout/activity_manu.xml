@@ -33,40 +33,27 @@
                 android:layout_weight="1.0"
                 android:text="" />
 
-            <Button
+            <com.appzone.tls.FontableTextView
                 android:id="@+id/start_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/_0dp"
-                android:layout_weight="1.0"
-                android:background="@drawable/ic_launcher" />
+                style="@style/MenueStyle"
 
-            <Button
-                android:id="@+id/abt_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/_0dp"
-                android:layout_weight="1.0"
-                android:background="@drawable/ic_launcher" />
+                android:text="Start" />
 
-            <Button
+
+
+            <com.appzone.tls.FontableTextView
                 android:id="@+id/instruction_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/_0dp"
-                android:layout_weight="1.0"
-                android:background="@drawable/ic_launcher" />
+                style="@style/MenueStyle"
+                android:text="Instructions" />
 
-            <Button
+            <com.appzone.tls.FontableTextView
                 android:id="@+id/history_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/_0dp"
-                android:layout_weight="1.0"
-                android:background="@drawable/ic_launcher" />
-
-            <Button
-                android:id="@+id/exit_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/_0dp"
-                android:layout_weight="1.0"
-                android:background="@drawable/ic_launcher" />
+                style="@style/MenueStyle"
+                android:text="History" />
+            <com.appzone.tls.FontableTextView
+                android:id="@+id/abt_btn"
+                style="@style/MenueStyle"
+                android:text="About Us" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -87,5 +74,14 @@
         android:id="@+id/lladd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentBottom="true" >
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/ad_unit">
+        </com.google.android.gms.ads.AdView>
+    </FrameLayout>
 </RelativeLayout>

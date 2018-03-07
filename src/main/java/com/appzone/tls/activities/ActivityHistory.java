@@ -13,10 +13,12 @@ import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
 import com.appzone.truelovescore.R;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 
 public class ActivityHistory extends Activity implements OnClickListener {
-
+    AdView adView;
 
     public void onCreate(Bundle bundle) {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -31,6 +33,9 @@ public class ActivityHistory extends Activity implements OnClickListener {
         findViewById(R.id.clear).setOnClickListener(this);
         findViewById(R.id.back_h).setOnClickListener(this);
         sqlitedatabase.close();
+        adView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
     }
 
     @Override

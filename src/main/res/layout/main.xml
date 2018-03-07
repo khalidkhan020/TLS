@@ -72,16 +72,16 @@
                 android:paddingTop="20dp">
 
                 <com.appzone.tls.FontableTextView
+                    style="@style/MenueStyle"
                     android:id="@+id/textView_m"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="0dp"
                     android:text="@string/me"
-                    android:textColor="@color/Color"
+                    android:textColor="@color/colorAccent"
                     android:textSize="34sp"
-                    android:textStyle="bold"
-                    app:myfont="my_font.ttf" />
+                    android:textStyle="bold" />
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -94,15 +94,15 @@
 
                 <com.appzone.tls.FontableTextView
                     android:id="@+id/textView_f"
+                    style="@style/MenueStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="0dp"
                     android:text="@string/love"
-                    android:textColor="@color/Color"
+                    android:textColor="@color/colorAccent"
                     android:textSize="34sp"
-                    android:textStyle="bold"
-                    app:myfont="" font="my_font.ttf" />
+                    android:textStyle="bold" />
             </LinearLayout>
 
         </LinearLayout>
@@ -111,6 +111,18 @@
             android:id="@+id/lladd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true" />
+            android:layout_alignParentBottom="true" >
+
+
+                <com.google.android.gms.ads.AdView
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="@string/ad_unit">
+                </com.google.android.gms.ads.AdView>
+
+        </FrameLayout>
     </RelativeLayout>
 </LinearLayout>

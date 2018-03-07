@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="Color">#ffcc0000</color>
+
+    <color name="colorAccent">#ff4040</color>
     <declare-styleable name="FontableTextView">
-    <attr name="myfont" format="string">
-    </attr></declare-styleable>
+        <attr name="myfont" format="string"></attr>
+    </declare-styleable>
 </resources>

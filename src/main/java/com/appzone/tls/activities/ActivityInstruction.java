@@ -8,9 +8,11 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import com.appzone.truelovescore.R;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 public class ActivityInstruction extends Activity {
-
+    AdView adView;
     public void onCreate(Bundle bundle) {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -23,5 +25,8 @@ public class ActivityInstruction extends Activity {
                 ActivityInstruction.this.finish();
             }
         });
+        adView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
     }
 }

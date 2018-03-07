@@ -29,6 +29,8 @@ import android.widget.Toast;
 
 
 import com.appzone.truelovescore.R;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import java.util.Random;
 
@@ -55,7 +57,7 @@ public class ActivityGame extends Activity {
     int rotation;
     int state;
 
-
+    AdView adView;
     public void onCreate(Bundle bundle) {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -73,6 +75,10 @@ public class ActivityGame extends Activity {
         this.resultTV = findViewById(R.id.count);
         this.meTV = findViewById(R.id.textView_m);
         this.gfTV = findViewById(R.id.textView_f);
+
+        adView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
     }
 
     class C00931 extends Handler {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fddfe2"
@@ -11,13 +11,14 @@
         android:background="@drawable/text_bg"
         android:orientation="vertical">
 
-        <ImageView
+        <com.appzone.tls.FontableTextView
+            style="@style/MenueStyle"
             android:id="@+id/textView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:src="@drawable/ic_launcher"
-            android:textColor="@color/Color" />
+            android:layout_marginTop="@dimen/_60dp"
+            android:text="@string/about_us"
+            android:textColor="@color/colorAccent" />
 
         <TextView
             android:id="@+id/textView2"
@@ -28,21 +29,31 @@
             android:layout_marginRight="50dp"
             android:layout_marginTop="20dp"
             android:text="@string/about"
-            android:textColor="@color/Color" />
+            android:textColor="@color/colorAccent" />
 
-        <Button
+        <com.appzone.tls.FontableTextView
+            style="@style/MenueStyle"
             android:id="@+id/back_a"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|bottom"
-            android:background="@drawable/ic_launcher" />
+            android:text="@string/close" />
     </LinearLayout>
+
 
     <FrameLayout
         android:id="@+id/lladd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="@null" />
+        android:layout_alignParentBottom="true" >
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/ad_unit">
+        </com.google.android.gms.ads.AdView>
+    </FrameLayout>
 
-</LinearLayout>
+</RelativeLayout>
